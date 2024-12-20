@@ -1,0 +1,12 @@
+services:
+
+    postgres:
+      image: bitnami/postgresql:latest
+      ports:
+        - "5432:5432"
+      environment:
+        POSTGRESQL_USER: tasks
+        POSTGRESQL_PASSWORD: admin
+        POSTGRESQL_DATABASE: tasks
+
+#Acessar DB psql -h localhost -U myuser -d mydatabase
